@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "patches": [
+    {
+      "name": "Save to Secure Folder",
+      "description": "Allows saving/moving photos and videos directly to Samsung Secure Folder (One UI Knox) from Iris Gallery.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.iris.gallery",
+          "name": "Iris Gallery",
+          "description": "Iris Gallery 0.70 Secure Folder Patch",
+          "targets": [
+            {
+              "version": "0.70",
+              "isExperimental": false
+            }
+          ]
+        }
+      ],
+      "options": []
+    }
+  ]
+}
